@@ -4,6 +4,7 @@
   "description": "Example of ES6 syntax in Firebase Cloud Functions",
   "license": "MIT",
   "author": "Aleksey Razbakov",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src/ -d dist",
     "serve": "yarn build && firebase serve --only functions",
