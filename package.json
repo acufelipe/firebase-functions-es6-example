@@ -8,7 +8,7 @@
   "scripts": {
     "build": "babel src/ -d dist",
     "serve": "yarn build && firebase serve --only functions",
-    "deploy": "firebase deploy --only functions"
+    "deploy": "yarn build && firebase deploy --only functions"
   },
   "dependencies": {
     "firebase-admin": "~6.0.0",
@@ -19,5 +19,8 @@
     "babel-cli": "latest",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0"
+  },
+  "engines": {
+    "node": "8"
   }
 }
